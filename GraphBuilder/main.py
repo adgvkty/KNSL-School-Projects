@@ -5,7 +5,7 @@ import os
 import DFS
 import pickle
 from math import sqrt
-from pygame_widgets import Button
+from pygame_widgets.button import Button
 from tkinter import filedialog
 import random as ra
 import numpy as np
@@ -105,6 +105,7 @@ def menu():
         for i in pg.event.get():
 
             keys = pg.key.get_pressed()
+            print(keys)
 
             if i.type == pg.QUIT:
                 sys.exit()
